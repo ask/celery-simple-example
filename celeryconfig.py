@@ -1,0 +1,6 @@
+BROKER_URL = 'amqp://guest:guest@localhost:5672//'
+CELERY_IMPORTS = ('tasks', )
+
+CELERY_RESULT_BACKEND = 'amqp'
+CELERY_RESULT_PERSISTENT = True
+CELERY_TASK_RESULT_EXPIRES = None
